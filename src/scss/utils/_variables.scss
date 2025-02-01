@@ -1,50 +1,67 @@
-// Мінімальна та максимальна ширина області перегляду з макету
-$min-w: 375px;
-$max-w: 1440px;
+//  breakpoints
 
-// Відступи
-$spacer-base: 30px;
+$breakpoints: (
+  "sm": 375px,
+  "md": 768px,
+  "lg": 1200px,
+  "xl": 1440px,
+  "xxl": 1920px,
+);
+// Base colors
+$colors: (
+  "light": #fff,
+  "light-primary": #fafafb,
+  "light-secondary": #b5b5be,
+  " light-tertiary": #92929d,
+  "dark": #000,
+  "dark-primary": #13131a,
+  "dark-secondary": #1c1c24,
+  "dark-tertiary": #292932,
+  "accent-primary": #f07f2e,
+  "accent-secondary": #d14a00,
+  "accent-tertiary": #dc6a19,
+  "danger": #fc5a5a,
+  "warning": #a461d8,
+  "success": #82c43c,
+  "info": #4e75ff,
+  "transparent": transparent,
+  "current": currentColor,
+);
 
-$spacer-xxs: 0.25 * $spacer-base;
-$spacer-xs: 0.5 * $spacer-base;
-$spacer-s: 0.75 * $spacer-base;
-$spacer-m: $spacer-base;
-$spacer-l: 1.5 * $spacer-base;
-$spacer-xl: 2 * $spacer-base;
-$spacer-xxl: 2.25 * $spacer-base;
+// paddings
 
-// Розміри шрифтів
-$fs-base: 16px;
+$paddings: (
+  "sm": 4px,
+  "md": 8px,
+  "lg": 16px,
+  "xl": 24px,
+);
 
-$fs-xxs: 11px;
-$fs-xs: 12px;
-$fs-s: 14px;
-$fs-m: $fs-base;
-$fs-l: 22px;
-$fs-xl: 24px;
-$fs-xxl: 26px;
+//spasers
+$spacers: (
+  "sm": 24px,
+  "md": 32px,
+  "lg": 36px,
+  "xl": 68px,
+);
 
-// Палітра кольорів
-// Base
-$primary: #f07f2e;
-$success: #82c43c;
-$info: #4e75ff;
-$warning: #a461d8;
-$danger: #fc5a5a;
-$light: #92929d;
-$dark: #13131a;
-// Additional
-$gray: #b5b5be;
-$bg-secondary-1: #1c1c24;
-$bg-secondary-2: #292932;
-$text-primary-1: #f15c27;
-$text-primary-2: #d14a00;
-$white: #fff;
-$black: #000;
+$main-font: "Montserrat", sans-serif;
 
-// Брейкпоінти
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
+// font sizes
+$font-sizes: (
+  "sm": 14px,
+  "md": 16px,
+  "lg": 20px,
+  "xl": 24px,
+);
+
+$font-weights: (
+  "Regular": 400,
+  "Medium": 500,
+  "SemiBold": 600,
+  "Bold": 700,
+);
+$easing: (
+  "fast": 300ms ease,
+  "slow": 600ms ease,
+);

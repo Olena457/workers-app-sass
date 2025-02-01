@@ -1,45 +1,82 @@
-// Міскин для керуванням властивостями флекс контейнера
-// Використовується у файлі _flex.scss
-@mixin flex-center($is-column: false) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@use "sass:map";
+@use "sass:list";
 
-  @if $is-column {
-    flex-direction: column;
-  }
-}
+@use "variables" as var;
+@use "functions" as fn;
 
-// Міксин для стилізації плейсхолдера інпута
-@mixin placeholder {
-  &::placeholder {
-    @content;
-  }
-}
+// mixin media query
 
-// Міксин для респонсивного розмішу шрифтів
-@mixin fluid-fs($min-w, $max-w, $min-fs, $max-fs) {
-  $u1: unit($min-w);
-  $u2: unit($max-w);
-  $u3: unit($min-fs);
-  $u4: unit($max-fs);
+@mixin mq($bp: sm, $type: min, $is-retina: false) {
+  @if map.has-key($breakpoints, $bp) {
+    $width: map.get(var.$breakpoints, $is-retina);
 
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-    & {
-      font-size: $min-fs;
+    @if $type == max {
+      $width: $width - 0.02px;
+    }
 
-      @media only screen and (min-width: $min-w) {
-        font-size: calc(
-          #{$min-fs} + #{strip-unit($max-fs - $min-fs)} *
-            ((100vw - #{$min-w}) / #{strip-unit($max-w - $min-w)})
-        );
-      }
-
-      @media only screen and (min-width: $max-w) {
-        font-size: $max-fs;
+    @media only screen and (#{$type}-width: $width) {
+      @if $is-retina {
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          @content;
+        }
+      } @else {
+        @content;
       }
     }
   } @else {
-    @error "Incompatible units. Check mixin params";
+    @warn "Breakpoint $breakpoints not found in the map";
+  }
+}
+@mixin frame($width, $height: $width, $is-circle: false) {
+  width: $width;
+  height: $height;
+
+  @if $is-circle {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  img {
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+
+@mixin scroll-bar {
+  &::-webkit-scrollbar {
+    width: 14px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100px;
+
+    &:hover {
+      background-color: rgba(#fff, 0.3);
+    }
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: fn.get-color("light-secondary");
+    background-clip: content-box;
+    border: 5px solid transparent;
+    border-radius: 100px;
+
+    &:hover {
+      background-color: fn.get-color("accent-primary");
+    }
+  }
+}
+
+@mixin ease($ease, $properties...) {
+  @if map.has-key(var.$easesings, $ease) {
+    $ease: map.get(var.$easesings, $ease);
+
+    transition: $ease;
+  } @else {
+    @warn 'The variable $ease is not found';
+  }
+
+  @if list.length($properties) > 0 {
+    transition-property: $properties;
   }
 }
