@@ -7,7 +7,7 @@
 // mixin media query
 
 @mixin mq($bp: sm, $type: min, $is-retina: false) {
-  @if map.has-key($breakpoints, $bp) {
+  @if map.has-key(var.$breakpoints, $bp) {
     $width: map.get(var.$breakpoints, $is-retina);
 
     @if $type == max {
