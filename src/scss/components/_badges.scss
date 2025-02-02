@@ -1,29 +1,18 @@
-@use "../base/fonts";
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mx;
 
-.badges {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+@each $value in "danger", "warning", "success" {
+  .badge-#{$value} {
+    @extend %details-accent;
 
-  //   &-item {
-  //   }
+    min-width: 96px;
+    padding: 4px 8px;
 
-  &-link {
-    display: block;
-    border-radius: 5rem;
-    color: var(--main-text-color);
-    text-decoration: none;
-    background: var(--brand-color);
-    padding: 0.8rem 1.8rem;
-    transition: 0.2s ease;
-
-    &:hover {
-      background: var(--brand-light-color);
-    }
+    text-align: center;
+    color: fn.get-color("light-primary");
+    border-radius: 20px;
+    background-color: fn.get-color($value);
   }
-}
-.no-link {
-  pointer-events: none;
 }
