@@ -44,7 +44,7 @@ const toggleMenu = () => {
   const isMenuOpen = refsMenu.openMenuBtn.getAttribute("aria-expanded") === "true" || false;
   refsMenu.openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
   refsMenu.overlayMenu.classList.toggle("is-open");
-  constScrollLockMethod = !isMenuOpen ? "disableBodyScroll" : "enableBodyScroll";
+  const scrollLockMethod = !isMenuOpen ? "disableBodyScroll" : "enableBodyScroll";
   bodyScrollLock[scrollLockMethod](document.body);
 };
 refsMenu.openMenuBtn.addEventListener("click", toggleMenu);
