@@ -14,7 +14,7 @@ const toggleMenu = () => {
   refsMenu.openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
   refsMenu.overlayMenu.classList.toggle("is-open");
 
-  constScrollLockMethod = !isMenuOpen
+  const scrollLockMethod = !isMenuOpen
     ? "disableBodyScroll"
     : "enableBodyScroll";
   bodyScrollLock[scrollLockMethod](document.body);
@@ -23,7 +23,7 @@ const toggleMenu = () => {
 refsMenu.openMenuBtn.addEventListener("click", toggleMenu);
 refsMenu.closeMenuBtn.addEventListener("click", toggleMenu);
 
-// Close modal menu  on winder screens if the device orientation changes
+// Close modal menu on wider screens if the device orientation changes
 window.matchMedia("(min-width: 1200px)").addEventListener("change", (e) => {
   if (!e.matches) return;
 

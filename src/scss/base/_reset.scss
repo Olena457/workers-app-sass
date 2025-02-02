@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.11 (last updated 20.9.2023)
+    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -38,7 +38,8 @@ button {
 /* Remove list styles (bullets/numbers) */
 ol,
 ul,
-menu {
+menu,
+summary {
   list-style: none;
 }
 
@@ -56,7 +57,7 @@ table {
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
 input,
 textarea {
-  user-select: auto;
+  -webkit-user-select: auto;
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
@@ -81,20 +82,15 @@ meter {
   color: unset;
 }
 
-/* remove default dot (•) sign */
-::marker {
-  content: initial;
-}
-
 /* fix the feature of 'hidden' attribute.
-   display:revert; revert to element instead of attribute */
+ display:revert; revert to element instead of attribute */
 :where([hidden]) {
   display: none;
 }
 
 /* revert for bug in Chromium browsers
-   - fix for the content editable attribute will work properly.
-   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+ - fix for the content editable attribute will work properly.
+ - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
 :where([contenteditable]:not([contenteditable="false"])) {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
@@ -113,43 +109,8 @@ meter {
   all: revert;
   box-sizing: border-box;
 }
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
-  margin: 0;
-}
 
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-img,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-  }
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+  display: none;
 }
