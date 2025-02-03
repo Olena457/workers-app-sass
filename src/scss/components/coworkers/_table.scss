@@ -88,7 +88,7 @@
         background-color: fn.get-color("light-tertiary");
 
         @include mx.mq("xl") {
-          background-color: fn.get-color("dark-tertiary");
+          background-color: fn.get-color("dark-secondary");
         }
       }
     }

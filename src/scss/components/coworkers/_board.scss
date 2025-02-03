@@ -17,7 +17,7 @@
   justify-content: space-between;
   gap: 43px;
 
-  background-color: fn.get-color("dark-tertiary");
+  background-color: fn.get-color("dark-secondary");
 
   @include mx.mq("xl") {
     background-color: fn.get-color("dark-secondary");

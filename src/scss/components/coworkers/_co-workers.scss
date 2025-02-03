@@ -5,10 +5,11 @@
 
 .co-workers {
   grid-area: co-workers;
+  background-color: fn.get-color("dark-tertiary");
 
   @include mx.mq("xl") {
     padding: 20px;
-    background-color: fn.get-color("dark");
+    background-color: fn.get-color("light-gray");
     border-radius: 12px;
   }
 }
@@ -19,7 +20,7 @@
   margin-bottom: 40px;
 
   border-radius: 12px;
-  background-color: fn.get-color("dark-tertiary");
+  background-color: fn.get-color("dark-secondary");
 
   @include mx.mq("xl") {
     max-height: 400px;
