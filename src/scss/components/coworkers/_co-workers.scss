@@ -8,7 +8,7 @@
 
   @include mx.mq("xl") {
     padding: 20px;
-    background-color: fn.get-color("dark-tertiary");
+    background-color: fn.get-color("dark");
     border-radius: 12px;
   }
 }

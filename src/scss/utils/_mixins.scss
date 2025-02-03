@@ -79,6 +79,6 @@
   }
 
   @if list.length($properties) > 0 {
-    transition-property: $properties;
+    transition: $properties;
   }
 }

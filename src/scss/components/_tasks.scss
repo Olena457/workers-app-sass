@@ -11,7 +11,7 @@
   min-width: 340px;
   max-height: 420px;
 
-  background-color: fn.get-color("dark-tertiary");
+  background-color: fn.get-color("dark-secondary");
 }
 .tasks-title {
   @extend %details;

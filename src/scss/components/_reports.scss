@@ -15,7 +15,7 @@ $reports-status: (
   grid-area: reports;
 
   min-width: 340px;
-  background-color: fn.get-color("dark-tertiary");
+  background-color: fn.get-color("dark-secondary");
 }
 .reports-title {
   @extend %details;

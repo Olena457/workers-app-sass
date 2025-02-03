@@ -1,4 +1,5 @@
 import "../scss/main.scss";
+
 // import * as bodyScrollLock from "body-scroll-lock";
 
 // Sidebar menu
@@ -17,17 +18,17 @@ const toggleMenu = () => {
   const scrollLockMethod = !isMenuOpen
     ? "disableBodyScroll"
     : "enableBodyScroll";
-  bodyScrollLock[scrollLockMethod](document.body);
+  // bodyScrollLock[scrollLockMethod](document.body);
 };
 
 refsMenu.openMenuBtn.addEventListener("click", toggleMenu);
 refsMenu.closeMenuBtn.addEventListener("click", toggleMenu);
 
-// Close modal menu on wider screens if the device orientation changes
-window.matchMedia("(min-width: 1200px)").addEventListener("change", (e) => {
-  if (!e.matches) return;
+// Close the mobile menu on wider screens if the device orientation changes
+window.matchMedia("(min-width: 1200px)").addEventListener("change", (event) => {
+  if (!event.matches) return;
 
   refsMenu.overlayMenu.classList.remove("is-open");
   refsMenu.openMenuBtn.setAttribute("aria-expanded", false);
-  bodyScrollLock.enableBodyScroll(document.body);
+  // bodyScrollLock.enableBodyScroll(document.body);
 });
