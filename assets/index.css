@@ -426,6 +426,7 @@ summary {
 
 .co-workers {
   grid-area: co-workers;
+  background-color: #292932;
 }
 
 .co-workers-wrapper {
@@ -433,7 +434,7 @@ summary {
   padding: 16px;
   margin-bottom: 40px;
   border-radius: 12px;
-  background-color: #292932;
+  background-color: #1c1c24;
 }
 
 .co-workers-title {
@@ -723,7 +724,7 @@ summary {
      -moz-box-pack: justify;
           justify-content: space-between;
   gap: 43px;
-  background-color: #292932;
+  background-color: #1c1c24;
 }
 .board-item.hide {
   display: none;
@@ -1364,7 +1365,7 @@ summary {
 @media only screen and (min-width: 1440px) {
   .co-workers {
     padding: 20px;
-    background-color: #000;
+    background-color: #36363c;
     border-radius: 12px;
   }
   .co-workers-wrapper {
@@ -1383,7 +1384,7 @@ summary {
     background-color: #292932;
   }
   .co-workers-table tbody td::after {
-    background-color: #292932;
+    background-color: #1c1c24;
   }
   .board-item {
     background-color: #1c1c24;
