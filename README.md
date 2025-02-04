@@ -1,29 +1,20 @@
-# Simple starter template for Sass
+# Workers-app-Sass
 
-![screenshot](./demo/main-page.jpg)
+![screenshot](./demo/screenshot-1.jpg)
+![screenshot](./demo/screenshot-2.jpg)
 
-## Vanilla App Template
-
-Ключові особливості цього шаблону:
+---
 
 **Build Tools:** Vite.js
-
-## Створення репозиторію за шаблоном
-
-![Settings GitHub Actions permissions step 1](./demo/gh-actions-perm-1.png)
-
-## Підготовка до роботи
-
-[Скачай та встанови](https://nodejs.org/en/) її якщо необхідно.
 
 3. Запусти режим розробки, виконавши в терміналі команду `npm run dev`.
 
    [http://localhost:5173](http://localhost:5173). Ця сторінка буде автоматично
    `
 
-## Структура проекту. Файли і папки
+## Configure the project structure:
 
-This is the structure of the project:
+This is the structure of the project: # Vite config 🛠️
 
 ```plaintext
 /
@@ -42,18 +33,28 @@ This is the structure of the project:
 ├── package-lock.json
 ├── package.json
 ├── postcss.config.cjs
-├── README.md               # Цей файл 😎
-├── vite.config.js          # Конфігурація бандлера Vite
+├── README.md
+├── vite.config.js
 ```
-
-`import '../scss/style.scss';`.
 
 ```json
-"build": "vite build --base=/<REPO>/",
+"build": "vite build --base=/<REPO>/"
 ```
+
+---
+
+## Start development mode:
+
+```bash
+npm run dev
+```
+
+```bash
+npm run dev watch
+```
+
+---
 
 ## License
 
-Цей шаблон створено під [MIT License](LICENSE).
-
-**Thank you and happy coding!** 💻
+This tamplate is created under [MIT License](LICENSE).
