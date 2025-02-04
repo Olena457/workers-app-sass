@@ -1,7 +1,7 @@
-@use "../utils/placeholders-report";
-@use "../utils/variables-report" as var;
-@use "../utils/functions-report" as fn;
-@use "../utils/mixins-report" as mx;
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mx;
 
 .goal {
   @extend %section-frame;
@@ -9,7 +9,7 @@
   grid-area: goal;
 
   min-width: 340px;
-  background-image: url("../../img/report-img/goal.jpg");
+  background-image: url("../../img/report/goal.jpg");
   background-size: cover;
   background-position: center;
   // background-color: fn.get-color("dark-secondary");
