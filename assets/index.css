@@ -424,6 +424,11 @@ summary {
   color: #fafafb;
 }
 
+.welcome-btn {
+  display: block;
+  margin-left: auto;
+}
+
 .co-workers {
   grid-area: co-workers;
   background-color: #292932;
@@ -646,7 +651,7 @@ summary {
   position: sticky;
   top: -1px;
   z-index: 100;
-  background-color: #292932;
+  background-color: #1c1c24;
 }
 .co-workers-table thead th {
   position: relative;
@@ -1301,6 +1306,12 @@ summary {
   background-color: #82c43c;
 }
 
+@media only screen and (lg-width: 768px) {
+  .welcome-btn {
+    margin-left: auto;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .main {
     gap: 36px;
@@ -1378,13 +1389,13 @@ summary {
     margin-bottom: 36px;
   }
   .co-workers-table thead {
-    background-color: #1c1c24;
-  }
-  .co-workers-table thead th::after {
     background-color: #292932;
   }
+  .co-workers-table thead th::after {
+    background-color: #92929d;
+  }
   .co-workers-table tbody td::after {
-    background-color: #1c1c24;
+    background-color: #92929d;
   }
   .board-item {
     background-color: #1c1c24;
@@ -1399,7 +1410,7 @@ summary {
     z-index: 1000;
     width: 100%;
     height: 100%;
-    background-color: rgba(146, 146, 157, 0.2);
+    background-color: rgba(54, 54, 60, 0.7);
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
