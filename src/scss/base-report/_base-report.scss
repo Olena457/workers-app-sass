@@ -1,0 +1,24 @@
+@use "../utils/placeholders-report";
+@use "../utils/variables-report" as var;
+@use "../utils/functions-report" as fn;
+@use "../utils/mixins-report" as mx;
+
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+body {
+  @extend %main-text;
+  // font-family: "Montserrat", sans-serif;
+  font-family: var.$main-font, sans-serif;
+  color: fn.get-color("light-secondary");
+  background-color: fn.get-color("dark-tertiary");
+}
+
+button {
+  font-family: inherit;
+  color: fn.get-color("current");
+  cursor: pointer;
+}
+
+summary {
+  list-style: none;
+}
