@@ -31,5 +31,10 @@
   }
 }
 
-// .welcome-btn {
-// }
+.welcome-btn {
+  display: block;
+  margin-left: auto;
+  @include mx.mq("md", "lg") {
+    margin-left: auto;
+  }
+}

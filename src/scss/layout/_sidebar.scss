@@ -13,7 +13,7 @@
     width: 100%;
     height: 100%;
 
-    background-color: rgba(fn.get-color("light-tertiary"), $alpha: 0.2);
+    background-color: rgba(fn.get-color("light-gray"), $alpha: 0.7);
     opacity: 0;
     pointer-events: none;
     visibility: hidden;

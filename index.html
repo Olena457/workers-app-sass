@@ -87,7 +87,7 @@
                 <use href="./src/img/icons.svg#menu-envelope"></use>
               </svg>
               Mesage
-              <span class="menu-notification notification">8</span>
+              <span class="menu-notification notification is-notify">8</span>
             </a>
           </li>
 
@@ -128,7 +128,7 @@
         />
       </label>
       <button
-        class="notification-btn btn"
+        class="notification-btn"
         type="button"
         data-notify="true"
         aria-label="Bell button"
@@ -142,14 +142,14 @@
     <main class="main">
       <section class="welcome">
         <h1 class="page-title">
-          <span class="page-title-accent">Hello, super team!</span>
-          Welcome into Work Portal
+          <span class="page-title-accent">Hello, Olena!</span>
+          Welcome to Portal
         </h1>
-        <button class="welcome-btn" type="button">
-          <svg class="welcome-btn-icon" width="16" height="16">
+        <button class="welcome-btn btn btn--primary" type="button">
+          <svg class="btn-icon" width="16" height="16">
             <use href="./src/img/icons.svg#icon-plus"></use>
           </svg>
-          Primary normal
+          <span class="btn-inner">Primary normal</span>
         </button>
       </section>
 
@@ -706,7 +706,7 @@
             </div>
             <div class="board-right">
               <p class="board-tag">Reminder</p>
-              <p class="badge warning">Completed</p>
+              <p class="badge-warning">Completed</p>
             </div>
           </li>
           <li class="board-item">
@@ -730,7 +730,7 @@
             </div>
             <div class="board-right">
               <p class="board-tag">Call</p>
-              <p class="badge error">Ended</p>
+              <p class="badge-danger">Ended</p>
             </div>
           </li>
           <li class="board-item hide">
@@ -753,11 +753,13 @@
             </div>
             <div class="board-right">
               <p class="board-tag">Reminder</p>
-              <p class="badge">Completed</p>
+              <p class="badge-success">Completed</p>
             </div>
           </li>
         </ul>
-        <button class="show-more-btn" type="button">Show more</button>
+        <button class="co-workers-btn btn btn--secondary" type="button">
+          <span class="bnt-inner">Show more</span>
+        </button>
       </section>
 
       <section class="tasks">

@@ -25,10 +25,10 @@
     position: sticky;
     top: -1px;
     z-index: 100;
-    background-color: fn.get-color("dark-tertiary");
+    background-color: fn.get-color("dark-secondary");
 
     @include mx.mq("xl") {
-      background-color: fn.get-color("dark-secondary");
+      background-color: fn.get-color("dark-tertiary");
     }
 
     th {
@@ -53,7 +53,7 @@
         background-color: fn.get-color("light-tertiary");
 
         @include mx.mq("xl") {
-          background-color: fn.get-color("dark-tertiary");
+          background-color: fn.get-color("light-tertiary");
         }
       }
 
@@ -88,7 +88,7 @@
         background-color: fn.get-color("light-tertiary");
 
         @include mx.mq("xl") {
-          background-color: fn.get-color("dark-secondary");
+          background-color: fn.get-color("light-tertiary");
         }
       }
     }
