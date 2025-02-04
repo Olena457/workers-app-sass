@@ -1,15 +1,21 @@
 # Workers-app-Sass
 
-![screenshot](./demo/screenshot-1.png)
-![screenshot](./demo/screenshot-2.png)
-
+<div style="display: flex; justify-content: space-between; gap: 10px;">
+  <img src="./demo/screenshot-1.png" alt="screenshot" width="350" height="280" />
+  <img src="./demo/screenshot-2.png" alt="screenshot" width="350" height="280" />
+</div>
 ---
 
-**Build Tools:** Vite.js
+**Build Tools:** 🛠️
+
+- Vite.js
+- SASS
+- Java Script
+- HTML
 
 ## Configure the project structure:
 
-This is the structure of the project: # Vite config 🛠️
+**This is the structure of the project:** 👌
 
 ```plaintext
 /
@@ -38,7 +44,7 @@ This is the structure of the project: # Vite config 🛠️
 
 ---
 
-## Start development mode:
+## Start development mode: 🚀
 
 ```bash
 npm run dev
