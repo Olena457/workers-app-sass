@@ -1,0 +1,15 @@
+@use "../utils/placeholders-report";
+@use "../utils/variables-report" as var;
+@use "../utils/functions-report" as fn;
+@use "../utils/mixins-report" as mx;
+
+.budget {
+  @extend %section-frame;
+
+  grid-area: budget;
+
+  min-width: 340px;
+  background-image: url("../../img/report-img/budget.jpg");
+  background-size: cover;
+  background-position: center;
+}
