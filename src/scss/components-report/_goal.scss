@@ -1,0 +1,64 @@
+@use "../utils-report/placeholders-report";
+@use "../utils-report/variables-report" as var;
+@use "../utils-report/functions-report" as fn;
+@use "../utils-report/mixins-report" as mx;
+
+.goal {
+  @extend %section-frame;
+
+  grid-area: goal;
+
+  min-width: 340px;
+  // background-color: fn.get-color("dark-secondary");
+}
+// .reports-title {
+//   @extend %details;
+
+//   margin-bottom: 36px;
+//   color: fn.get-color("light-secondary");
+
+//   span {
+//     @extend %accent-text;
+//     color: fn.get-color("light-primary");
+//   }
+// }
+// here need added photo!!!__________________________________
+// .reports-item {
+//   display: flex;
+//   align-items: center;
+//   gap: 30px;
+
+//   @include mx.mq("md") {
+//     gap: 32px;
+//   }
+
+//   &:not(:last-child) {
+//     margin-bottom: 28px;
+//   }
+// }
+// .reports-staff {
+//   flex-grow: 1;
+//   flex-shrink: 0;
+// }
+// .staff {
+//   display: flex;
+//   align-items: center;
+//   gap: 16px;
+// }
+// .staff-thumb {
+//   @include mx.frame(32px, $is-circle: true);
+// }
+// .staff-caption {
+//   @extend %details;
+
+//   color: fn.get-color("light-secondary");
+// }
+// .reports-bar {
+//   width: calc(100% - 224px);
+//   height: 4px;
+
+//   &[value] {
+//     border-radius: 2px;
+//   }
+
+//

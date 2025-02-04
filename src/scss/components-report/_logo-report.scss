@@ -3,18 +3,16 @@
 @use "../utils-report/functions-report" as fn;
 @use "../utils-report/mixins-report" as mx;
 
-.header {
+.logo {
+  @extend %main-title;
+
   display: flex;
   align-items: center;
-  padding: 16px;
-
-  background-color: fn.get-color("dark-secondary");
-  box-shadow: 0px 1px 0px 0px #292932 inset;
+  gap: 8px;
+  padding: 8px 20px;
+  color: fn.get-color("accent-primary");
 
   @include mx.mq("lg") {
-    grid-area: header;
-
-    padding: 24px 36px;
-    justify-content: space-between;
+    padding: 16px 20px;
   }
 }
