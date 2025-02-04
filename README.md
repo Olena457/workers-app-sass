@@ -1,16 +1,11 @@
 # Workers-app-Sass
 
-![screenshot](./demo/screenshot-1.jpg)
-![screenshot](./demo/screenshot-2.jpg)
+![screenshot](./demo/screenshot-1.png)
+![screenshot](./demo/screenshot-2.png)
 
 ---
 
 **Build Tools:** Vite.js
-
-3. Запусти режим розробки, виконавши в терміналі команду `npm run dev`.
-
-   [http://localhost:5173](http://localhost:5173). Ця сторінка буде автоматично
-   `
 
 ## Configure the project structure:
 
