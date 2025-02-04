@@ -1,9 +1,10 @@
 # Workers-app-Sass
 
 <div style="display: flex; justify-content: space-between; gap: 10px;">
-  <img src="./demo/screenshot-1.png" alt="screenshot" width="390" height="280" />
-  <img src="./demo/screenshot-2.png" alt="screenshot" width="390" height="280" />
+  <img src="./demo/screenshot-1.png" alt="screenshot" width="390" height="220" />
+  <img src="./demo/screenshot-2.png" alt="screenshot" width="390" height="220" />
 </div>
+
 ---
 
 **Build Tools:** 🛠️
